@@ -1,0 +1,54 @@
+{
+  "_comment": "Chicken Brands BHT - Nationality Split. Validated to match the KFC YouGov file exactly. Metrics use net_score; weekly = 7 calendar days anchored to the start date.",
+  "score_type": "net_score",
+  "resample": { "size": 7, "type": "calendar_day" },
+  "scoring": "total",
+  "start": "2026-01-01",
+  "end": null,
+  "metrics": {
+    "aided": "Awareness",
+    "index": "Brand Index",
+    "buzz": "Buzz",
+    "consider": "Consideration",
+    "likelybuy": "Purchase Intent",
+    "reputation": "Reputation"
+  },
+  "audiences": [
+    {
+      "market": "UAE", "region": "ae", "sector_id": 699,
+      "audience": "Locals + Arab Expats",
+      "filter": "bixdemo_uaebixnat in [1, 2]",
+      "brands": {
+        "Al Baik": 1020046, "Burger King": 602785, "McDonald's": 602798, "KFC": 602797,
+        "Raising Cane's": 1025906, "Texas Chicken": 1003486, "Hardee's": 602794, "Wingstop": 1025907
+      }
+    },
+    {
+      "market": "UAE", "region": "ae", "sector_id": 699,
+      "audience": "MF 18-34",
+      "filter": "bixdemo_bixage in [1, 2]",
+      "brands": {
+        "Al Baik": 1020046, "Burger King": 602785, "McDonald's": 602798, "KFC": 602797,
+        "Raising Cane's": 1025906, "Texas Chicken": 1003486, "Hardee's": 602794, "Wingstop": 1025907
+      }
+    },
+    {
+      "market": "KSA", "region": "sa", "sector_id": 686,
+      "audience": "Locals",
+      "filter": "bixdemo_ksabixnat in [1]",
+      "brands": {
+        "Al Baik": 602460, "KFC": 602472, "Kudu": 602473, "McDonald's": 602475,
+        "Burger King": 602464, "Hardee's": 602470, "Herfy": 602471
+      }
+    },
+    {
+      "market": "KSA", "region": "sa", "sector_id": 686,
+      "audience": "MF 18-34",
+      "filter": "bixdemo_bixage in [1, 2]",
+      "brands": {
+        "Al Baik": 602460, "KFC": 602472, "Kudu": 602473, "McDonald's": 602475,
+        "Burger King": 602464, "Hardee's": 602470, "Herfy": 602471
+      }
+    }
+  ]
+}

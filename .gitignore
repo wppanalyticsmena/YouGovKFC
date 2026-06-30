@@ -1,0 +1,17 @@
+# Secrets — never commit
+.env
+*.json.key
+service-account*.json
+
+# Raw data dumps
+*.csv
+*.xlsx
+*.xls
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
